@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Melolo - Premium Streaming Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Library WAJIB untuk memutar link m3u8 di browser desktop -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#E50914',
+              secondary: '#B3B3B3',
+              dark: '#050505',
+              surface: '#121212'
+            },
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: #050505; }
+      ::-webkit-scrollbar-thumb { background: #E50914; border-radius: 10px; }
+      body { background-color: #050505; color: #fff; -webkit-font-smoothing: antialiased; }
+      @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+      .glass { background: rgba(5, 5, 5, 0.85); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+      .hero-gradient { background: linear-gradient(to top, #050505 0%, transparent 80%), linear-gradient(to right, #050505 0%, transparent 60%); }
+      .drama-card-hover { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+      .drama-card-hover:hover { transform: translateY(-12px) scale(1.03); box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5); }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
